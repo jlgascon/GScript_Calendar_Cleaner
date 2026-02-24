@@ -1,4 +1,4 @@
-#Google Calendar Cleaner
+## Google Calendar Cleaner
 
 > A Google Apps Script utility to programmatically purge legacy Google Calendar events within a defined epoch. 
 
