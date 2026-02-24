@@ -1,6 +1,9 @@
 ## Google Calendar Cleaner
 
-> A Google Apps Script utility to programmatically purge legacy Google Calendar events within a defined epoch. 
+> A Google Apps Script utility to programmatically purge legacy Google Calendar events within a defined epoch.
+
+## DISCLAIMER
+Scope & Limitations: This repository represents a functional baseline rather than a finalized architecture. It is a highly specific, one-off execution built to clear an immediate bottleneck. Future commits will address race conditions, UI implementation, and execution efficiency.
 
 ## Architecture & Purpose
 Designed for administrative onboarding workflows, this script sanitizes recycled role/alumni accounts before they are integrated into shared calendar groups. It mitigates privacy leaks and reduces storage bloat by systematically deleting historical event data.
