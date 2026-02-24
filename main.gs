@@ -1,4 +1,4 @@
-  // NAME: CALENDAR_CLEANER
+  // NAME: GScript_CALENDAR_CLEANER
   // AUTHOR: Jake Gascon, Recruitment & Admissions Admin Asst
   // CREATION: Feb 19 2026
   // PURPOSE: Rudimentary script to bulk delete calendar events between given dates , an epoch.
