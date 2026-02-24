@@ -17,11 +17,11 @@ function makeCalendarClean() {
   var events = calendar.getEvents(epochStart,epochEnd);
 
   //summon the temporal archivist
-  Logger.log("Temporal radar pinging...!: " + events.length + " anomalies detected for deletion in timeline.");
+  Logger.log("Searching epoch...!: " + events.length + " calendar events identified in epoch.");
 
-  //LETS GET SOME USER FEEDBACK STRUCTURE IN HERE, VERIFY SELECTION, ERROR HANDLING, RACE watch etc etc less vibey
+  //LETS GET SOME USER FEEDBACK STRUCTURE IN HERE, VERIFY SELECTION, ERROR HANDLING, RACE Watch
 
-  //CORE DELETION LOOP max damage
+  //CORE DELETION LOOP
 
   var killCount = 0;
   
@@ -33,8 +33,10 @@ function makeCalendarClean() {
 
       killCount++;
 
-      //Need a sleep to avoid "too many new or deleted events"
+      //Need a sleep to avoid "too many new or deleted events" and hangup
       //Utilities.sleep(3000), trying a bit tighter window
+
+      //800ms worked out great on deployment for about 5800 events
       Utilities.sleep(800)
 
     } catch (error) {
